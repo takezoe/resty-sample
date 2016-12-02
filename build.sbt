@@ -1,4 +1,3 @@
-//lazy val Organization = "organization"
 lazy val Name = "resty-sample"
 lazy val Version = "0.0.2"
 lazy val ScalaVersion = "2.12.0"
