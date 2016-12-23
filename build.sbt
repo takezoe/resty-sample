@@ -9,6 +9,7 @@ lazy val project = Project(Name, file("."))
     scalaVersion := "2.12.0",
     libraryDependencies ++= Seq(
       "com.github.takezoe"  %% "resty"             % "0.0.4",
+      "ch.qos.logback"      %  "logback-classic"   % "1.1.7",
       "org.eclipse.jetty"   %  "jetty-webapp"      % JettyVersion % "container",
       "org.eclipse.jetty"   %  "jetty-plus"        % JettyVersion % "container",
       "org.eclipse.jetty"   %  "jetty-annotations" % JettyVersion % "container",
