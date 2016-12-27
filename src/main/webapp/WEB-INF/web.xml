@@ -28,4 +28,10 @@
         <param-value>enable</param-value>
     </context-param>
 -->
+<!--
+    <context-param>
+        <param-name>resty.dynamic-logback</param-name>
+        <param-value>enable</param-value>
+    </context-param>
+-->
 </web-app>
