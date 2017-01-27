@@ -42,4 +42,14 @@
         <param-value>application.log</param-value>
     </context-param>
 -->
+<!--
+    <context-param>
+        <param-name>resty.wabjars</param-name>
+        <param-value>enable</param-value>
+    </context-param>
+    <context-param>
+        <param-name>resty.wabjars.path</param-name>
+        <param-value>/public/assets/*</param-value>
+    </context-param>
+-->
 </web-app>
