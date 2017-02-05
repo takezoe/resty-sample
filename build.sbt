@@ -1,5 +1,5 @@
 lazy val Name = "resty-sample"
-lazy val Version = "0.0.7"
+lazy val Version = "0.0.8"
 lazy val ScalaVersion = "2.12.1"
 lazy val JettyVersion = "9.3.9.v20160517"
 
@@ -8,7 +8,7 @@ lazy val project = Project(Name, file("."))
     name := "resty-sample",
     scalaVersion := "2.12.0",
     libraryDependencies ++= Seq(
-      "com.github.takezoe"  %% "resty"             % "0.0.7",
+      "com.github.takezoe"  %% "resty"             % "0.0.8",
       "org.eclipse.jetty"   %  "jetty-webapp"      % JettyVersion % "container",
       "org.eclipse.jetty"   %  "jetty-plus"        % JettyVersion % "container",
       "org.eclipse.jetty"   %  "jetty-annotations" % JettyVersion % "container",
@@ -18,7 +18,10 @@ lazy val project = Project(Name, file("."))
     javaOptions in Jetty ++= Seq(
       "-Xdebug",
       "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000"
-    )
+    ),
+    artifactName := { (_, module: ModuleID, artifact: Artifact) =>
+      artifact.name + "." + artifact.extension
+    }
   )
   .enablePlugins(JettyPlugin)
 
