@@ -30,20 +30,6 @@
 -->
 <!--
     <context-param>
-        <param-name>resty.logconsole</param-name>
-        <param-value>enable</param-value>
-    </context-param>
-    <context-param>
-        <param-name>resty.logconsole.dir</param-name>
-        <param-value>logs</param-value>
-    </context-param>
-    <context-param>
-        <param-name>resty.logconsole.file</param-name>
-        <param-value>application.log</param-value>
-    </context-param>
--->
-<!--
-    <context-param>
         <param-name>resty.wabjars</param-name>
         <param-value>enable</param-value>
     </context-param>
