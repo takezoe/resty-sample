@@ -1,18 +1,19 @@
 lazy val Name = "resty-sample"
-lazy val Version = "0.0.8"
+lazy val Version = "0.0.11"
 lazy val ScalaVersion = "2.12.1"
 lazy val JettyVersion = "9.3.9.v20160517"
 
 lazy val project = Project(Name, file("."))
   .settings(
-    name := "resty-sample",
-    scalaVersion := "2.12.0",
+    name := Name,
+    version := Version,
+    scalaVersion := ScalaVersion,
     libraryDependencies ++= Seq(
-      "com.github.takezoe"  %% "resty"             % "0.0.10",
+      "com.github.takezoe"  %% "resty"             % Version,
       "org.eclipse.jetty"   %  "jetty-webapp"      % JettyVersion % "container",
       "org.eclipse.jetty"   %  "jetty-plus"        % JettyVersion % "container",
       "org.eclipse.jetty"   %  "jetty-annotations" % JettyVersion % "container",
-      "javax.servlet"       %  "javax.servlet-api" % "3.0.1" % "provided"
+      "javax.servlet"       %  "javax.servlet-api" % "3.1.0" % "provided"
     ),
     scalacOptions := Seq("-deprecation"),
     javaOptions in Jetty ++= Seq(

@@ -1,6 +1,6 @@
 package com.github.takezoe.resty.sample
 
-import com.github.takezoe.resty.Action
+import com.github.takezoe.resty._
 import org.slf4j.LoggerFactory
 
 class HelloController {
