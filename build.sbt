@@ -1,6 +1,6 @@
 lazy val Name = "resty-sample"
-lazy val Version = "0.0.11"
-lazy val ScalaVersion = "2.12.1"
+lazy val Version = "0.0.12"
+lazy val ScalaVersion = "2.12.4"
 lazy val JettyVersion = "9.3.9.v20160517"
 
 lazy val project = Project(Name, file("."))
