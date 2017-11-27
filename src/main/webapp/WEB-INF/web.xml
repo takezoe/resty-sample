@@ -14,6 +14,10 @@
         <param-value>enable</param-value>
     </context-param>
     <context-param>
+        <param-name>resty.zipkin.service.name</param-name>
+        <param-value>restry-sample</param-value>
+    </context-param>
+    <context-param>
         <param-name>resty.zipkin.sample.rate</param-name>
         <param-value>1.0</param-value>
     </context-param>

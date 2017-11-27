@@ -1,5 +1,5 @@
 lazy val Name = "resty-sample"
-lazy val Version = "0.0.12"
+lazy val Version = "0.0.13"
 lazy val ScalaVersion = "2.12.4"
 lazy val JettyVersion = "9.3.9.v20160517"
 
