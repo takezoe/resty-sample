@@ -1,6 +1,6 @@
 lazy val Name = "resty-sample"
-lazy val Version = "0.0.17"
-lazy val ScalaVersion = "2.12.4"
+lazy val Version = "0.0.18"
+lazy val ScalaVersion = "2.12.6"
 lazy val JettyVersion = "9.3.9.v20160517"
 
 lazy val project = Project(Name, file("."))
@@ -22,7 +22,8 @@ lazy val project = Project(Name, file("."))
     ),
     artifactName := { (_, module: ModuleID, artifact: Artifact) =>
       artifact.name + "." + artifact.extension
-    }
+    },
+    addCompilerPlugin("com.github.takezoe" %% "runtime-scaladoc-reader" % "1.0.1")
   )
   .enablePlugins(JettyPlugin)
 
